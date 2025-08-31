@@ -127,7 +127,7 @@ jobs:
       - name: Prepare CI Environment
         uses: ./.github/actions/prepare_env
       - name: Swift Build
-        run: "swift build --build-tests --disable-sandbox"
+        run: "swift build --disable-sandbox"
       - name: Swift Test
         run: "swift test"
 
@@ -147,7 +147,7 @@ jobs:
       - name: Prepare CI Environment
         uses: ./.github/actions/prepare_env
       - name: Swift Build
-        run: "swift build --build-tests --disable-sandbox"
+        run: "swift build --disable-sandbox"
       - name: Swift Test
         run: "swift test"
 
